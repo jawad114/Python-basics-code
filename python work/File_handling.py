@@ -1,0 +1,11 @@
+# openf=open("jawad.txt", "rt")
+# # a=f.write("Jawad Shah is also de student of Gcp")
+# a=f.read()
+# print(a)
+with open("jawad.txt", "rt") as f:
+    a=f.read()
+    print(a)
+f=open("jawad.txt")
+cont=f.read()
+print(cont)
+f.close()

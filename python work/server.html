@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Server running</title>
+</head>
+<body>
+        const http = require("http");
+        const fs = require("fs");
+
+        const hostname = "127.0.0.1";
+        const port = 3000;
+
+        const server = http.createServer((res ,req)=>{
+        res.statusCode = 200;
+        res.setHeader('Content-Type', 'text/html');
+        res.end('Hello World');
+        })
+        server.listen(port, hostname, () => {
+        console.log(`Server running at http://${hostname}:${port}/`);
+});
+</body>
+</html>
